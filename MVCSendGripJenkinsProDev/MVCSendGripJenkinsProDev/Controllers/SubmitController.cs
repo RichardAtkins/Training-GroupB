@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCSendGripJenkinsProDev.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -23,9 +24,29 @@ namespace MVCSendGripJenkinsProDev.Controllers
         //}
 
         // POST api/submit
-        public HttpResponseMessage Post([FromBody]string value)
+        public HttpResponseMessage Post([FromBody]Email value)
         {
-            return new HttpResponseMessage(HttpStatusCode.InternalServerError);
+            if (string.IsNullOrEmpty(value.Subject))
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+
+            if (string.IsNullOrEmpty(value.To))
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+
+            if (value == new Email())
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+
+            if (value.DeliveryType != "Email")
+            {
+                return new HttpResponseMessage(HttpStatusCode.NotImplemented);
+            }
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
         // PUT api/submit/5
