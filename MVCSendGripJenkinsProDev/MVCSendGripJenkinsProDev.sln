@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSendGridJenkinsProDev", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSendGridJenkinsProDev.Tests", "MVCSendGridJenkinsProDev.Tests\MVCSendGridJenkinsProDev.Tests.csproj", "{D09845B0-0A98-4F00-B7F8-86C234719C29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C19A8DE0-5A05-4F27-9E90-BAC7DEBA09DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D09845B0-0A98-4F00-B7F8-86C234719C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D09845B0-0A98-4F00-B7F8-86C234719C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D09845B0-0A98-4F00-B7F8-86C234719C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19A8DE0-5A05-4F27-9E90-BAC7DEBA09DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19A8DE0-5A05-4F27-9E90-BAC7DEBA09DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19A8DE0-5A05-4F27-9E90-BAC7DEBA09DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19A8DE0-5A05-4F27-9E90-BAC7DEBA09DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
